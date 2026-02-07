@@ -181,7 +181,8 @@ export function getThumbnailFromId(urlOrId) {
     if (platform === "loom") {
         const id = getLoomIdFromUrl(input);
         if (id) return `https://cdn.loom.com/sessions/thumbnails/${id}-with-play.gif`;
-    }
+    } // note: some platforms might NOT support thumbnails or even video embedding at all..
+      // If someone is down to help me make a fix for those, that would be awesome, but for now we will just return the default thumbnail for unsupported platforms or if any parsing or thumbnail retrieval fails.
 
     // 2. Returns fallback for unsupported platforms (Vimeo, Streamable, etc.)
     return DEFAULT_THUMB;

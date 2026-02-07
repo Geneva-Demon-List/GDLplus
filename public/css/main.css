@@ -2,32 +2,32 @@
     /* Forced Dark Scheme */
     color-scheme: dark;
 
-        --color-background: #0f0f0f;
-        --color-on-background: #f0f0f0;
-        --color-background-hover: #1a1a1a;
-        --color-on-background-hover: #f0f0f0;
-        
-        --color-primary: #d4c217;
-        --color-primary-level: #fff389;
-        --color-primary-light: #2a2815;
-        --color-primary-hover: #e8d80a;
-        --color-primary-disabled: #1f213c;
-        --color-on-primary: #1a1a1a;
-        
-        --color-error: #de0000;
-        --color-on-error: white;
-        
-        --color-border: #2a2a2a39;
-        --color-text-secondary: #999;
-        --color-text-plus: #efffdf;
-        --color-text-minus: #ffdfdf;
-        --color-text-legacy: #ff822f;
-        --color-text-level-warning: #cc22009f;
-        --color-text-version: #efffdf5c;
-        --color-text-highlight: #fff;
+    --color-background: #0f0f0f;
+    --color-on-background: #f0f0f0;
+    --color-background-hover: #1a1a1a;
+    --color-on-background-hover: #f0f0f0;
+
+    --color-primary: #d4c217;
+    --color-primary-level: #fff389;
+    --color-primary-light: #2a2815;
+    --color-primary-hover: #e8d80a;
+    --color-primary-disabled: #1f213c;
+    --color-on-primary: #1a1a1a;
+
+    --color-error: #de0000;
+    --color-on-error: white;
+
+    --color-border: #2a2a2a39;
+    --color-text-secondary: #999;
+    --color-text-plus: #efffdf;
+    --color-text-minus: #ffdfdf;
+    --color-text-legacy: #ff822f;
+    --color-text-level-warning: #cc22009f;
+    --color-text-version: #efffdf5c;
+    --color-text-highlight: #fff;
 }
 
-/* Removed light mode cus it had no use for the TPL :fire: */
+/* Removed light mode cus it had no use for the TPL (my eyes were killed before) */
 
 html,
 body {
@@ -48,10 +48,8 @@ main {
     background-color: var(--color-background);
     color: var(--color-on-background);
     display: grid;
-    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(
-            16em,
-            1fr
-        );
+    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(16em,
+            1fr);
     column-gap: 2rem;
 }
 
@@ -63,7 +61,7 @@ main {
 
 ::-webkit-scrollbar-thumb {
     background: var(--color-primary);
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -114,7 +112,7 @@ main {
     column-gap: 2rem;
 }
 
-main > div {
+main>div {
     overflow-y: auto;
 }
 
@@ -135,7 +133,7 @@ input[type="checkbox"] {
     line-height: 1.6 !important;
     display: block;
     position: relative;
-} 
+}
 
 .rule-text strong {
     color: var(--color-text-highlight);

@@ -21,8 +21,8 @@ router.beforeEach((to, from, next) => {
     // Change title based on route
     if (to.path === '/leaderboard') title = "Leaderboard | TPL";
     else if (to.path === '/roulette') title = "Roulette | TPL";
-    else if (to.path === '/admin') title = "Admin Panel LOGIN | TPL";
-    else if (to.path === '/manage') title = "Admin management LOGIN | TPL";
+    else if (to.path === '/admin') title = "Admin Panel | TPL";
+    else if (to.path === '/manage') title = "Management Panel | TPL";
 
     document.title = title;
     next();

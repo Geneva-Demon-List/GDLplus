@@ -200,7 +200,7 @@
 }
 
 
-/* Stats Grid */
+/* stats Grid */
 .page-list-packs .stats {
     display: flex;
     justify-content: space-between;
@@ -232,7 +232,7 @@
     margin: 0;
 }
 
-/* Records Table */
+/* records table */
 .page-list-packs .records {
     width: 100%;
     border-collapse: collapse;

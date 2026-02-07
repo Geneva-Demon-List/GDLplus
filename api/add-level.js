@@ -52,7 +52,7 @@ export default async function handler(req, res) {
     } catch (error) {
         console.error('API Error:', error);
         if (error.code === '23505') {
-            return res.status(400).json({ error: "A level with this name already exists." });
+            return res.status(400).json({ error: "A level with this name already exists! Please slightly change the name before submitting to prevent conflict." });
         }
         res.status(500).json({ error: error.message });
     }
