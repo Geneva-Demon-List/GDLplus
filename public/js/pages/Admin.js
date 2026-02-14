@@ -266,6 +266,7 @@ export default {
                             <div><label>Name</label><input v-model="editingLevel.name"></div>
                             <div><label>Author</label><input v-model="editingLevel.author" placeholder="Name, Name2..."></div>
                             <div><label>Verifier</label><input v-model="editingLevel.verifier"></div>
+                            <div><label>ID</label><input v-model.number="editingLevel.id" type="number"></div>
                             <div><label>Video</label><input v-model="editingLevel.verification"></div>
                             <div><label>Percent</label><input v-model.number="editingLevel.percentToQualify"></div>
                         </div>
